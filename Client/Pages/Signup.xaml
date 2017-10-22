@@ -1,0 +1,30 @@
+﻿<Window x:Class="Client.Pages.Signup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:nanqi="http://nanqi.info"
+        xmlns:local="clr-namespace:Client.Pages"
+        mc:Ignorable="d"
+        Title="Signup" Height="300" Width="400">
+    <Grid>
+        <Border CornerRadius="5" Margin="19.707,26.492,73.126,208.189" BorderThickness="1" BorderBrush="#F2F2F2">
+            <TextBox x:Name="Text_UserName"  VerticalContentAlignment="Center" BorderBrush="#F2F2F2" Height="24.141"  TextWrapping="Wrap" Text=" 昵称" VerticalAlignment="Top" BorderThickness="0" Foreground="#FF716666" Margin="3.94,1.12,8.018,0" FontSize="14" GotFocus="TextBox_GotFocus" />
+        </Border>
+        <Border CornerRadius="5" Margin="17.756,76.086,75.077,158.595" BorderThickness="1" BorderBrush="#F2F2F2">
+            <TextBox x:Name="Text_pwd"  VerticalContentAlignment="Center" BorderBrush="#F2F2F2" Height="24.141"  TextWrapping="Wrap" Text=" 密码" VerticalAlignment="Top" BorderThickness="0" Foreground="#FF716666" Margin="3.94,0.135,8.018,0" FontSize="14" GotFocus="TextBox_GotFocus" />
+             
+        </Border>
+        <Border CornerRadius="5" Margin="20.14,134.367,259.201,100.314" BorderThickness="1" BorderBrush="#F2F2F2">
+            <TextBox x:Name="Text_code"  VerticalContentAlignment="Center" BorderBrush="#F2F2F2" Height="24.141"  TextWrapping="Wrap" Text=" 验证码" VerticalAlignment="Top" BorderThickness="0" Foreground="#FF62BDFF" Margin="3.925,3.09,4.075,0" FontSize="12" GotFocus="TextBox_GotFocus" />
+        </Border>
+        <Border CornerRadius="5" Margin="139.345,134.367,73.126,100.314" BorderThickness="1" BorderBrush="#F2F2F2">
+            <TextBox x:Name="Text_phone"  VerticalContentAlignment="Center" BorderBrush="#F2F2F2" Height="24.141"  TextWrapping="Wrap" Text="手机号码" VerticalAlignment="Top" BorderThickness="0" Foreground="#FF716666" Margin="2.94,2.105,5.06,0" FontSize="14" GotFocus="TextBox_GotFocus" />
+        </Border>
+        <Label x:Name="btn_GetVerificationCode" Cursor="Hand"  Content="获取验证码" HorizontalAlignment="Left"  VerticalContentAlignment="Center" Margin="317.949,139.422,0,0" VerticalAlignment="Top" Foreground="#FF62BDFF" MouseLeftButtonUp="btn_GetVerificationCode_MouseLeftButtonUp" FontSize="10"/>
+        <Label Content="可通过该手机号找回密码" HorizontalAlignment="Left" Margin="19.707,178.599,0,0" VerticalAlignment="Top" FontSize="10" Foreground="#FFA1A0A1"/>
+        <Button Content="立即注册" HorizontalAlignment="Left" Margin="25.283,217.678,0,0" VerticalAlignment="Top" Width="293.186" Background="#FF62BDFF" BorderBrush="White" Height="33.36" Foreground="White" BorderThickness="0" MouseLeftButtonUp="Button_MouseLeftButtonUp" Click="Button_Click"/>
+        <PasswordBox x:Name="Password_pwd" HorizontalAlignment="Left" Margin="25.283,80.92,0,0" VerticalAlignment="Top" Width="277.292" Height="19.624" BorderThickness="0" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
