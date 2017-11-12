@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControls\RoomItem.xaml.cs">
+      <DependentUpon>RoomItem.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,12 +72,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\RoomList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Signup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\RoomItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\RoomList.xaml.cs">
+      <DependentUpon>RoomList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Signup.xaml.cs">
       <DependentUpon>Signup.xaml</DependentUpon>
     </Compile>
@@ -116,11 +130,47 @@
     <Resource Include="Resources\LoginBack.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserControls\" />
+    <Resource Include="QQ截图20171112163944.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\login-checked.png" />
     <Resource Include="Resources\login-unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\主页面背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\头像和选项栏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="我的余额.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="我的收入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="房主账户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="会员中心.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="充值中心.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="在线客服.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="我的设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="QQ截图20171112162143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="搜索框20.85-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="放大镜.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

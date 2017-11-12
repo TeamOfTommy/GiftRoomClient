@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.Pages"
+        xmlns:UserControls="clr-namespace:Client.UserControls" x:Class="Client.Pages.RoomList"
+        mc:Ignorable="d"
+        Title="RoomList" Height="539" Width="749" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="288*"/>
+            <ColumnDefinition Width="455*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="主页面背景.png"/>
+        </Grid.Background>
+        <Image Margin="265.748,168.958,39.134,293" Source="/Client;component/我的余额.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="265.748,216.958,39.134,245" Source="/Client;component/我的收入.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="263.748,264.958,41.134,197" Source="/Client;component/房主账户.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="265.748,312.958,39.134,149" Source="/Client;component/会员中心.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="265.748,360.958,39.134,101" Source="/Client;component/充值中心.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="265.748,408.958,39.134,53" Source="/Client;component/在线客服.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="265.748,456.958,39.134,5" Source="/Client;component/我的设置.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="267.748,6.958,39.134,341" Source="/Client;component/QQ截图20171112162143.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="6.076,8.067,188.058,438.891" Source="/Client;component/搜索框20.85-2.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image Margin="94.656,23.067,162.007,455.891" Source="/Client;component/放大镜.png" Stretch="Fill" RenderTransformOrigin="0.647,0.252"/>
+        <TextBox x:Name="TextBox_searchKey" HorizontalAlignment="Left" Height="39.874" Margin="146.975,18.067,0,0" TextWrapping="Wrap" Text="输入关键字搜索你感兴趣的房间" VerticalAlignment="Top" Width="374.924" Opacity="0.5" FontSize="24" VerticalContentAlignment="Center" BorderThickness="0" Foreground="#FFF7ECEC" Background="#FF16151B" Grid.ColumnSpan="2" MouseLeftButtonDown="TextBox_searchKey_MouseLeftButtonDown" MouseDown="TextBox_searchKey_MouseDown" GotFocus="TextBox_searchKey_GotFocus" KeyDown="TextBox_searchKey_KeyDown"/>
+
+        <ScrollViewer x:Name="scrolls" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Width="550" Grid.ColumnSpan="2" Margin="7,76,187.185,3.849"  >
+            <ScrollViewer.Content>
+
+                <StackPanel x:Name="RoomPannel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="530" Grid.ColumnSpan="2">
+
+                    <UserControls:RoomItem Height="100"/>
+                    <UserControls:RoomItem Height="100"/>
+                </StackPanel>
+
+            </ScrollViewer.Content>
+        </ScrollViewer>
+    </Grid>
+</Window>
